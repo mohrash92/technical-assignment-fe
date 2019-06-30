@@ -1,7 +1,65 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
 body {
-	background-color: green;
-
-	h1 {
+  	font-family: 'Helvetica';
+	background-color: dodgerblue;
+  	margin: 0 0 100px;
+	h1, p {
 		color: white;
 	}
+}
+
+.rps-button {
+  margin-top: 20px;
+  font-size: 30px;
+  border-radius: 25px;
+  color: dodgerblue;
+  border: 2px solid;
+  text-align: center;
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
+/* Start Game */
+.start-game-container, .button-container, .game {
+  text-align: center;
+}
+
+.is-hidden {
+  display: none;
+}
+
+/* Attack Button */
+.attack-button {
+  font-size: 18px;
+  border-radius: 25px;
+  color: dodgerblue;
+  border: 2px solid;
+  text-align: center;
+  background-color: aliceblue;
+  cursor: pointer;
+  width: 90px;
+}
+
+.button-container {
+  position: absolute;
+  width: 100%;
+  overflow:hidden;
+}
+
+/* Players Container */
+.players-container {
+  padding-bottom: 10px;
+}
+
+/* Score Mesage */
+#score-message {
+  height: 7px;
+}
+
+/* Clear Button */
+.clear-button {
+  margin-top: 30px;
 }

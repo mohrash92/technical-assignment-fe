@@ -1,0 +1,16 @@
+{
+	"buttonData": [
+	  {
+		"name": "Rock",
+		"beats": "Scissors"
+	  },
+	  {
+		"name": "Paper",
+		"beats": "Rock"
+	  },
+	  {
+		"name": "Scissors",
+		"beats": "Paper"
+	  }
+	]
+}

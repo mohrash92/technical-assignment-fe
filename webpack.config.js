@@ -3,6 +3,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
 	cache: true,
@@ -19,7 +20,7 @@ module.exports = {
 		extensions: ['.js']
 	},
 	entry: {
-		'main': './src/js/main.js'
+		'main': './src/js/App.js'
 	},
 	output: {
 		path: path.join(process.cwd(), 'build'),
@@ -35,7 +36,17 @@ module.exports = {
 		}),
 		new webpack.LoaderOptionsPlugin({
 			debug: true
-		})
+		}),
+		new CopyWebpackPlugin([{
+			from: './src/data/**/*',
+			to: 'data',
+			flatten: true
+		}]),
+		new CopyWebpackPlugin([{
+			from: './src/images/**/*',
+			to: 'images',
+			flatten: true
+		}])
 	],
 	module: {
 		rules: [{
@@ -65,5 +76,6 @@ module.exports = {
 			exclude: [/node_modules/],
 			use: 'babel-loader'
 		}]
-	}
+	},
+	target: 'web'
 };
