@@ -1,5 +1,19 @@
 # Technical Assignment for Frontend
 
+## Development Start up 
+- In terms of the structure, I have not changed anything major. I am using my own implementation so the testing/running development env should be the same as before. So just make sure you have ran `npm install && npm run dev`
+
+## How to play 
+- Play against the computer:
+
+By default, after you click "Start Game", you will be able to play against the computer by clicking "Rock", "Paper" or "Scissors" from the selections  at the bottom of the screen for as many goes as you want. This will show your selection as player 1 and the computers as player 2.  You can then press "Restart Game" to restart a fresh new game. 
+
+- Play Computer vs Computer:
+
+While in Player vs Computer mode, you can enter into Computer vs Computer mode by simply clicking "Computer vs Computer". Clicking the "Play" button will select a random selection and make a move for both players at a time. You have the ability to restart or switch back to "Player vs Computer" mode at this point.
+
+
+
 ## User Story
 
 Create a browser based version of the game ‘Rock, Paper, Scissors’.
