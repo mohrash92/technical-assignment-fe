@@ -1,7 +1,7 @@
 # Technical Assignment for Frontend
 
 ## Development Start up 
-- In terms of the structure, I have not changed anything major. I am using my own implementation so the testing/running development env should be the same as before. So just make sure you have ran `npm install && npm run dev`
+- In terms of the structure, I have not changed anything major. I am using my own implementation so the testing/running development env should be the same as before. So just make sure you have ran `yarn install && yarn run dev`
 
 ## How to play 
 - Play against the computer:
