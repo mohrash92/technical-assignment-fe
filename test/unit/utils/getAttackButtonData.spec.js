@@ -17,7 +17,7 @@ describe('getAttackButtonData', () => {
 
 	it('should parse fetched data as JSON', function(done) {
 		const data = {foo: 'bar'};
-		var dataJson = JSON.stringify(data);
+		const dataJson = JSON.stringify(data);
 		getAttackButtonData(function (result) {
 			result.should.deep.equal(dataJson);
 			done();
