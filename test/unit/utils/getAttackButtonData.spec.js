@@ -1,5 +1,5 @@
 import sinon from "sinon";
-import { getAttackButtonData } from "../../src/js/utils/getAttackButtonData";
+import { getAttackButtonData } from "../../../src/js/utils/getAttackButtonData";
 
 describe('getAttackButtonData', () => {
 	beforeEach(function() {

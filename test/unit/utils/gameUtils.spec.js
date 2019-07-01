@@ -1,4 +1,4 @@
-import {updatePlayerScoreAndMessage} from "../../src/js/utils/gameUtils";
+import { updatePlayerScoreAndMessage } from "../../../src/js/utils/gameUtils";
 
 describe('updatePlayerScoreAndMessage', () => {
 	document.body.innerHTML = `<!doctype html>
